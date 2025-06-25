@@ -1,18 +1,18 @@
-# 🧠 LRU Cache Simulator (Python + Flask)
+# LRU Cache Simulator (Python + Flask)
 
 A fully functional **Least Recently Used (LRU) Cache Simulator** built in Python using a custom data structure and served via a web interface using **Flask** and **Tailwind CSS**.
 
-> 🚀 Designed for interviews, CS fundamentals, and memory management simulation.
+> Designed for interviews, CS fundamentals, and memory management simulation.
 
 ---
 
-## 📌 Features
+##  Features
 
 - ✅ **LRU Cache core logic** implemented using `Doubly Linked List` + `HashMap`
 - ✅ Command-line interface (CLI) to simulate put/get/cache operations
 - ✅ Dynamic cache capacity setting
-- ✅ **Responsive Flask web app** with Google Stitch + Tailwind UI
-- ✅ Beautiful display of current cache contents
+<!-- - ✅ **Responsive Flask web app** --> [in Progress]
+<!-- - ✅ Beautiful display of current cache contents --> [in Progress]
 - ✅ Reusable Python module structure (`lru.py`, `cli.py`, `app.py`)
 - ✅ Beginner-friendly and fully modular code
 
