@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LRU Cache</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+    input, button { padding: 6px 10px; margin: 5px; }
+    h1, h2 { color: #333; }
+    ul { list-style: none; padding: 0; }
+    li { background: #f0f0f0; margin: 5px 0; padding: 5px 10px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h1>🔁 LRU Cache</h1>
+
+  {% if not initialized %}
+    <form method="post" action="/init">
+      <h2>Set Cache Capacity</h2>
+      <input type="number" name="capacity" placeholder="Enter capacity" required>
+      <button type="submit">Initialize Cache</button>
+    </form>
+  {% else %}
+    <h2>Current Capacity: {{ capacity }}</h2>
+
+    <form method="post" action="/put">
+      <h3>Put Key-Value</h3>
+      <input type="number" name="key" required>
+      <input type="number" name="value" required>
+      <button type="submit">Put</button>
+    </form>
+
+    <form method="post" action="/get">
+      <h3>Get Value</h3>
+      <input type="number" name="key" required>
+      <button type="submit">Get</button>
+    </form>
+
+    {% if result %}
+      <p><strong>{{ result }}</strong></p>
+    {% endif %}
+
+    <h3>🧠 Current Cache Contents:</h3>
+    <ul>
+      {% for key, value in cache %}
+        <li>{{ key }} → {{ value }}</li>
+      {% else %}
+        <li>Cache is empty</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</body>
+</html>
