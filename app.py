@@ -7,14 +7,6 @@ app = Flask(__name__)
 # Set capacity here
 cache = None
 
-def get_cache_contents():
-    node = cache.head.next
-    contents = []
-    while node != cache.tail:
-        contents.append((node.key, node.value))
-        node = node.next
-    return contents
-
 @app.route("/", methods=["GET"])
 def home():
     if cache is None:
