@@ -11,7 +11,7 @@ A fully functional **Least Recently Used (LRU) Cache Simulator** built in Python
 - ✅ **LRU Cache core logic** implemented using `Doubly Linked List` + `HashMap`
 - ✅ Command-line interface (CLI) to simulate put/get/cache operations
 - ✅ Dynamic cache capacity setting
-<!-- - ✅ **Responsive Flask web app** --> [in Progress]
+- ✅ **Responsive Flask web app**
 <!-- - ✅ Beautiful display of current cache contents --> [in Progress]
 - ✅ Reusable Python module structure (`lru.py`, `cli.py`, `app.py`)
 - ✅ Beginner-friendly and fully modular code
